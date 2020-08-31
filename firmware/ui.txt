@@ -1,0 +1,19 @@
+2 buttons A B and 2 pots A B
+A pot is normal rpm set
+B pot is turbo rpm set
+A buttons is "turbo" mode activate (hold)
+B is enter to PID tuning (long press)
+in PID tuning mode
+  single press A buttons increase Kp or Ki coefficient
+  single press B buttons decrease Kp or Ki coefficient
+  long press B button will exit from PID tuning mode
+  long press A button will switch editing coefficient, Ki <-> Kp
+    default editing coefficient after enter to PID tuning mode is Kp
+  after exiting from PID tuning mode both Kp and Ki will be saved to eeprom
+  ?in PID tuning status led will flash slow (Kp is activate) or fast (Ki is activate)
+  
+powering mcu with pressed turbo runs calibration mode
+  hold turbo button until motor will reach max speed (no load)
+    that will be max rpm you can set using any pot
+    also will be stored in eeprom
+    

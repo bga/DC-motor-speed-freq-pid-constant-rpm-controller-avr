@@ -1,0 +1,10 @@
+v INT0 to blink status led
+v motor constant PWM to status led
+v motor ADC variable PWM to status led
+v read eeprom, flash status led N times
+  v fill eeprom with seq values in mcu, via 0xFF too
+v UI programming
+make pcb
+PID calculation
+enable watchdog
+
